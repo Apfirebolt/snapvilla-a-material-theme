@@ -1,3 +1,7 @@
+
+body {
+    background-color: chocolate;
+}
 .carousel .carousel-item {
     max-height: 400px;
 }
@@ -29,6 +33,19 @@ section {
 }
 
 #about h5, #events h5 {
+    margin: 1.5rem auto;
+    text-align: center;
+}
+
+footer {
+    font-size: 16px;
+    margin: 1.5rem auto;
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: #E0E0E0;
+}
+
+footer h4 {
     margin: 1.5rem auto;
     text-align: center;
 }

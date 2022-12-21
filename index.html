@@ -33,6 +33,22 @@
       </div>
     </nav>
 
+    <ul id="slide-out" class="sidenav">
+      <li><div class="user-view">
+        <div class="background">
+          <img src="img/resort2.jpg">
+        </div>
+        <a href="#user"><img class="circle" src="img/resort1.jpg"></a>
+        <a href="#name"><span class="white-text name">John Doe</span></a>
+        <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+      </div></li>
+      <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+      <li><a href="#!">Second Link</a></li>
+      <li><div class="divider"></div></li>
+      <li><a class="subheader">Subheader</a></li>
+      <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+    </ul>
+    
     <ul class="sidenav" id="mobile-demo">
       <li><a href="#about">About</a></li>
       <li><a href="#events">Events</a></li>
@@ -134,23 +150,27 @@
                   it appear circular.
                 </span>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos placeat corrupti neque reiciendis 
-                  ab rem libero, dolorum, labore quis culpa excepturi consequatur, laborum incidunt iure eos natus. Quis, repudiandae atque.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+                  placeat corrupti neque reiciendis ab rem libero, dolorum,
+                  labore quis culpa excepturi consequatur, laborum incidunt iure
+                  eos natus. Quis, repudiandae atque.
                 </p>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos placeat corrupti neque reiciendis 
-                  ab rem libero, dolorum, labore quis culpa excepturi consequatur, laborum incidunt iure eos natus. Quis, repudiandae atque.
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, ipsa! Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                  Quos placeat corrupti neque reiciendis ab rem libero, dolorum, labore quis culpa excepturi consequatur, laborum
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+                  placeat corrupti neque reiciendis ab rem libero, dolorum,
+                  labore quis culpa excepturi consequatur, laborum incidunt iure
+                  eos natus. Quis, repudiandae atque. Lorem ipsum dolor sit amet
+                  consectetur adipisicing elit. Quo, ipsa! Lorem ipsum dolor sit
+                  amet consectetur adipisicing elit. Quos placeat corrupti neque
+                  reiciendis ab rem libero, dolorum, labore quis culpa excepturi
+                  consequatur, laborum
                 </p>
               </div>
             </div>
           </div>
         </div>
         <div class="row text-center">
-          <h5>
-            Adventures
-          </h5>
+          <h5>Adventures</h5>
           <div class="col m6 text-center">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
@@ -189,31 +209,31 @@
         <div class="carousel carousel-slider center">
           <div class="carousel-item red white-text" href="#one!">
             <h2>First Panel</h2>
-            <img src="img/stuttgart1.jpg" alt="">
+            <img src="img/stuttgart1.jpg" alt="" />
           </div>
           <div class="carousel-item amber white-text" href="#two!">
             <h2>Second Image</h2>
-            <img src="img/stuttgart2.jpg" alt="">
+            <img src="img/stuttgart2.jpg" alt="" />
           </div>
           <div class="carousel-item green white-text" href="#three!">
             <h2>Third Image</h2>
-            <img src="img/stuttgart3.jpg" alt="">
+            <img src="img/stuttgart3.jpg" alt="" />
           </div>
         </div>
-        <h5>
-          Cities
-        </h5>
+        <h5>Cities</h5>
         <div class="row">
           <div class="col s6">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-              Voluptate quae esse id? Obcaecati, maxime accusamus nulla voluptatum sunt atque impedit!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+              quae esse id? Obcaecati, maxime accusamus nulla voluptatum sunt
+              atque impedit!
             </p>
           </div>
           <div class="col s6">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-              Voluptate quae esse id? Obcaecati, maxime accusamus nulla voluptatum sunt atque impedit!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+              quae esse id? Obcaecati, maxime accusamus nulla voluptatum sunt
+              atque impedit!
             </p>
           </div>
         </div>
@@ -278,7 +298,7 @@
             </ul>
           </div>
 
-          <div class="col s4 center-align green lighten-3">
+          <div class="col s4 center-align blue lighten-3">
             <h5>Premium Plan</h5>
             <ul class="collection">
               <li class="collection-item avatar">
@@ -307,7 +327,7 @@
       </section>
 
       <div class="parallax-container">
-        <div class="parallax"><img src="img/stuttgart5.jpg"></div>
+        <div class="parallax"><img src="img/stuttgart5.jpg" /></div>
       </div>
 
       <section
@@ -364,10 +384,8 @@
       </section>
     </main>
 
-    <footer class="gray lighten-3 center">
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, id?
-      </p>
+    <footer>
+      <h4>Important Links</h4>
 
       <div class="row gray lighten-3">
         <div class="col">
@@ -375,10 +393,24 @@
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus,
             libero!
           </p>
+          <button class="waves-effect waves-light btn-large teal">Button Wave</button>
         </div>
 
         <div class="col">
           <p>Please follow us on our social links.</p>
+
+          <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+
+          <!-- Modal Structure -->
+          <div id="modal1" class="modal">
+            <div class="modal-content">
+              <h4>Modal Header</h4>
+              <p>A bunch of text</p>
+            </div>
+            <div class="modal-footer">
+              <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+            </div>
+          </div>
         </div>
 
         <div class="col">
@@ -386,6 +418,8 @@
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus,
             libero!
           </p>
+          <a onclick="M.toast({html: 'I am a toast'})" class="btn">Toast!</a>
+          <button data-target="slide-out" class="sidenav-trigger waves-effect waves-light btn">Open Sidebar</button>
         </div>
       </div>
     </footer>

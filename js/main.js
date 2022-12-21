@@ -14,5 +14,8 @@ $(document).ready(function(){
       fullWidth: true,
       indicators: true
     });
+    M.toast({html: 'I am a toast!'})
+    $('.modal').modal();
+    $('.sidenav').sidenav();
     AOS.init();
   });
