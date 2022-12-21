@@ -12,6 +12,9 @@ which makes overwriting styles a hassle.
 
 That being said, I definitely prefer Materialize CSS over other similar CSS frameworks under certain situations. It's an amazing framework, would be looking forward to work on it more in future.
 
+Most of the content is filled with Lorem text. I really didn't care to put in some meaningful text which matches the theme of the 
+website which is photography, might edit this later.
+
 ## Getting Started
 
 You just need to clone the project and run the HTML index file in your browser and you're done.
@@ -23,3 +26,12 @@ You just need to clone the project and run the HTML index file in your browser a
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Screenshots
+
+Below you can find some screenshots of the theme.
+
+![alt text](./screenshots/1.jpg)
+
+![alt text](./screenshots/2.jpg)
+
