@@ -1,14 +1,308 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>HTML 5 Boilerplate</title>
-    <link rel="stylesheet" href="css/materialize.css">
+    <link rel="stylesheet" href="css/materialize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h1 class="teal-text">A Materialize Website</h1>  
-	<script src="js/materialize.js"></script>
+    <div class="container site-header">
+      <i class="material-icons circle blue lighten-2">add</i>
+      <h3 class="teal-text center">PhotoVilla</h3>
+    </div>
+    <nav>
+      <div class="nav-wrapper">
+        <a id="menu" href="#" data-target="mobile-demo" class="sidenav-trigger"
+          ><i class="material-icons">menu</i></a
+        >
+        <ul class="right hide-on-med-and-down">
+          <li><a href="sass.html">About</a></li>
+          <li><a href="badges.html">Events</a></li>
+          <li><a href="badges.html">Pricing</a></li>
+          <li><a href="collapsible.html">Portfolio</a></li>
+          <li><a href="mobile.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="sass.html">About</a></li>
+      <li><a href="badges.html">Events</a></li>
+      <li><a href="badges.html">Pricing</a></li>
+      <li><a href="collapsible.html">Portfolio</a></li>
+      <li><a href="mobile.html">Contact</a></li>
+    </ul>
+
+    <!-- Tap Target Structure -->
+    <div class="tap-target" data-target="menu">
+      <div class="tap-target-content">
+        <h5>About</h5>
+        <p>A bunch of text</p>
+      </div>
+    </div>
+
+    <div class="carousel teal carousel-slider center">
+      <a class="carousel-item" href="#one!"
+        ><img
+          src="https://images.unsplash.com/photo-1659535861581-ba057b067494?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+      /></a>
+      <a class="carousel-item" href="#two!"
+        ><img
+          src="https://images.unsplash.com/photo-1667307450467-79ccf8e172df?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=326&q=80"
+      /></a>
+      <a class="carousel-item" href="#three!"
+        ><img
+          src="https://images.unsplash.com/photo-1670140274562-2496ccaa5271?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80"
+      /></a>
+      <a class="carousel-item" href="#four!"
+        ><img
+          src="https://images.unsplash.com/photo-1665686374221-1901faa9f3ad?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+      /></a>
+      <a class="carousel-item" href="#five!"
+        ><img
+          src="https://plus.unsplash.com/premium_photo-1664288966242-b152efc0372d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+      /></a>
+    </div>
+
+    <!-- Dropdown Structure -->
+    <ul id="dropdown1" class="dropdown-content">
+      <li><a href="#!">one</a></li>
+      <li><a href="#!">two</a></li>
+      <li class="divider" tabindex="-1"></li>
+      <li><a href="#!">three</a></li>
+      <li>
+        <a href="#!"><i class="material-icons">view_module</i>four</a>
+      </li>
+      <li>
+        <a href="#!"><i class="material-icons">cloud</i>five</a>
+      </li>
+    </ul>
+
+    <ul id="slide-out" class="sidenav">
+      <li>
+        <div class="user-view">
+          <div class="background">
+            <img src="images/office.jpg" />
+          </div>
+          <a href="#user"><img class="circle" src="images/yuna.jpg" /></a>
+          <a href="#name"><span class="white-text name">John Doe</span></a>
+          <a href="#email"
+            ><span class="white-text email">jdandturk@gmail.com</span></a
+          >
+        </div>
+      </li>
+      <li>
+        <a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a>
+      </li>
+      <li><a href="#!">Second Link</a></li>
+      <li><div class="divider"></div></li>
+      <li><a class="subheader">Subheader</a></li>
+      <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+    </ul>
+
+    <main class="container">
+      <section class="grey about lighten-3">
+        <h3>About</h3>
+
+        <div class="col s12 m8 offset-m2 l6 offset-l3">
+          <div class="card-panel grey lighten-5 z-depth-1">
+            <div class="row valign-wrapper">
+              <div class="col s4">
+                <img src="img/stuttgart2.jpg" alt="" height="400" class="circle responsive-img"> <!-- notice the "circle" class -->
+              </div>
+              <div class="col s8">
+                <span class="black-text">
+                  This is a square image. Add the "circle" class to it to make it appear circular.
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <section class="blue lighten-3">
+        <h3>Events</h3>
+      </section>
+  
+      <section class="grey lighten-3">
+        <h3>Pricing</h3>
+        <div class="row blue lighten-3">
+          <div class="col s4 center-align">
+            <h5>Platinum Plan</h5>
+            <ul class="collection">
+              <li class="collection-item avatar">
+                <img src="img/stuttgart1.jpg" alt="" class="circle">
+                <span class="title">Title</span>
+                <p>First Line <br>
+                   Second Line
+                </p>
+              </li>
+              <li class="collection-item avatar">
+                <i class="material-icons circle">folder</i>
+                <span class="title">Title</span>
+                <p>First Line <br>
+                   Second Line
+                </p>
+              </li>
+              <li class="collection-item avatar">
+                <i class="material-icons circle green">insert_chart</i>
+                <span class="title">Title</span>
+                <p>First Line <br>
+                   Second Line
+                </p>
+              </li>
+              <li class="collection-item avatar">
+                <i class="material-icons circle red">play_arrow</i>
+                <span class="title">Title</span>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, voluptas?
+                </p>
+                
+              </li>
+            </ul>
+          </div>
+  
+          <div class="col s4 center-align">
+            <h5>Gold Plan</h5>
+            <ul class="collection">
+              <li class="collection-item avatar">
+                <img src="img/stuttgart1.jpg" alt="" class="circle">
+                <span class="title">Title</span>
+                <p>First Line <br>
+                   Second Line
+                </p>
+              </li>
+              <li class="collection-item avatar">
+                <i class="material-icons circle">folder</i>
+                <span class="title">Title</span>
+                <p>First Line <br>
+                   Second Line
+                </p>
+              </li>
+              <li class="collection-item avatar">
+                <i class="material-icons circle green">insert_chart</i>
+                <span class="title">Title</span>
+                <p>First Line <br>
+                   Second Line
+                </p>
+              </li>
+              <li class="collection-item avatar">
+                <i class="material-icons circle red">play_arrow</i>
+                <span class="title">Title</span>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, voluptas?
+                </p>
+                
+              </li>
+            </ul>
+          </div>
+  
+          <div class="col s4 center-align green lighten-3">
+            <h5>Premium Plan</h5>
+            <ul class="collection">
+              <li class="collection-item avatar">
+                <img src="img/stuttgart1.jpg" alt="" class="circle">
+                <span class="title">Title</span>
+                <p>First Line <br>
+                   Second Line
+                </p>
+              </li>
+              <li class="collection-item avatar">
+                <i class="material-icons circle">folder</i>
+                <span class="title">Title</span>
+                <p>First Line <br>
+                   Second Line
+                </p>
+              </li>
+              <li class="collection-item avatar">
+                <i class="material-icons circle green">insert_chart</i>
+                <span class="title">Title</span>
+                <p>First Line <br>
+                   Second Line
+                </p>
+              </li>
+              <li class="collection-item avatar">
+                <i class="material-icons circle red">play_arrow</i>
+                <span class="title">Title</span>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, voluptas?
+                </p>
+                
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+  
+      <section class="grey lighten-3">
+        <h3>Portfolio</h3>
+      </section>
+  
+      <section class="grey lighten-3">
+        <h3>Contact</h3>
+  
+        <div class="row">
+          <form class="col m6 s12">
+            <div class="row">
+              <div class="input-field col s6">
+                <i class="material-icons prefix">account_circle</i>
+                <input id="icon_prefix" type="text" class="validate" />
+                <label for="icon_prefix">First Name</label>
+              </div>
+              <div class="input-field col s6">
+                <i class="material-icons prefix">phone</i>
+                <input id="icon_telephone" type="tel" class="validate" />
+                <label for="icon_telephone">Telephone</label>
+              </div>
+            </div>
+          </form>
+          <div class="col m6 s12">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto dolores eligendi animi ea aperiam aut consequuntur possimus quaerat quas excepturi?
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="gray lighten-3 center">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, id?
+      </p>
+
+      <div class="row gray lighten-3">
+        <div class="col">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus,
+            libero!
+          </p>
+        </div>
+
+        <div class="col">
+          <p>Please follow us on our social links.</p>
+        </div>
+
+        <div class="col">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus,
+            libero!
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+    ></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

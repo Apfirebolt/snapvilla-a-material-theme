@@ -1,0 +1,28 @@
+.carousel .carousel-item {
+    max-height: 400px;
+}
+
+.carousel {
+    padding: 0.5rem;
+    max-height: 400px;
+}
+
+section {
+    margin: 1rem auto;
+    padding: 0.5rem;
+}
+
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.site-header i {
+    font-size: 64px;
+    margin-right: 8px;
+}
+
+.about img {
+    min-height: 300px;
+}
