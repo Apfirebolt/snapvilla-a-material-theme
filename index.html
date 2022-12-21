@@ -7,6 +7,7 @@
     <title>HTML 5 Boilerplate</title>
     <link rel="stylesheet" href="css/materialize.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/aos.css" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
@@ -17,27 +18,27 @@
       <i class="material-icons circle blue lighten-2">add</i>
       <h3 class="teal-text center">PhotoVilla</h3>
     </div>
-    <nav>
+    <nav class="purple lighten-3">
       <div class="nav-wrapper">
         <a id="menu" href="#" data-target="mobile-demo" class="sidenav-trigger"
           ><i class="material-icons">menu</i></a
         >
         <ul class="right hide-on-med-and-down">
-          <li><a href="sass.html">About</a></li>
-          <li><a href="badges.html">Events</a></li>
-          <li><a href="badges.html">Pricing</a></li>
-          <li><a href="collapsible.html">Portfolio</a></li>
-          <li><a href="mobile.html">Contact</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
 
     <ul class="sidenav" id="mobile-demo">
-      <li><a href="sass.html">About</a></li>
-      <li><a href="badges.html">Events</a></li>
-      <li><a href="badges.html">Pricing</a></li>
-      <li><a href="collapsible.html">Portfolio</a></li>
-      <li><a href="mobile.html">Contact</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#events">Events</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
 
     <!-- Tap Target Structure -->
@@ -108,146 +109,126 @@
     </ul>
 
     <main class="container">
-      <section class="grey about lighten-3">
+      <section data-aos="fade-in-left" id="about" class="grey about lighten-3 section scrollspy">
         <h3>About</h3>
 
         <div class="col s12 m8 offset-m2 l6 offset-l3">
           <div class="card-panel grey lighten-5 z-depth-1">
             <div class="row valign-wrapper">
               <div class="col s4">
-                <img src="img/stuttgart2.jpg" alt="" height="400" class="circle responsive-img"> <!-- notice the "circle" class -->
+                <img
+                  src="img/stuttgart2.jpg"
+                  alt=""
+                  height="400"
+                  class="circle responsive-img"
+                />
+                <!-- notice the "circle" class -->
               </div>
               <div class="col s8">
                 <span class="black-text">
-                  This is a square image. Add the "circle" class to it to make it appear circular.
+                  This is a square image. Add the "circle" class to it to make
+                  it appear circular.
                 </span>
               </div>
             </div>
           </div>
         </div>
       </section>
-  
-      <section class="blue lighten-3">
+
+      <section data-aos="fade-up" id="events" class="grey lighten-3 section scrollspy">
         <h3>Events</h3>
       </section>
-  
-      <section class="grey lighten-3">
+
+      <section data-aos="fade-up-left" id="pricing" class="grey lighten-3 section scrollspy">
         <h3>Pricing</h3>
         <div class="row blue lighten-3">
           <div class="col s4 center-align">
             <h5>Platinum Plan</h5>
             <ul class="collection">
               <li class="collection-item avatar">
-                <img src="img/stuttgart1.jpg" alt="" class="circle">
+                <img src="img/stuttgart1.jpg" alt="" class="circle" />
                 <span class="title">Title</span>
-                <p>First Line <br>
-                   Second Line
-                </p>
+                <p>Premium Templates</p>
               </li>
               <li class="collection-item avatar">
-                <i class="material-icons circle">folder</i>
+                <i class="material-icons circle">check</i>
                 <span class="title">Title</span>
-                <p>First Line <br>
-                   Second Line
-                </p>
+                <p>Full Tech Support</p>
               </li>
               <li class="collection-item avatar">
                 <i class="material-icons circle green">insert_chart</i>
                 <span class="title">Title</span>
-                <p>First Line <br>
-                   Second Line
-                </p>
+                <p>Full Tech Support</p>
               </li>
               <li class="collection-item avatar">
                 <i class="material-icons circle red">play_arrow</i>
                 <span class="title">Title</span>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, voluptas?
-                </p>
-                
+                <p>Full Tech Support</p>
               </li>
             </ul>
           </div>
-  
+
           <div class="col s4 center-align">
             <h5>Gold Plan</h5>
             <ul class="collection">
               <li class="collection-item avatar">
-                <img src="img/stuttgart1.jpg" alt="" class="circle">
+                <img src="img/stuttgart1.jpg" alt="" class="circle" />
                 <span class="title">Title</span>
-                <p>First Line <br>
-                   Second Line
-                </p>
+                <p>Full Tech Support</p>
               </li>
               <li class="collection-item avatar">
                 <i class="material-icons circle">folder</i>
                 <span class="title">Title</span>
-                <p>First Line <br>
-                   Second Line
-                </p>
+                <p>Full Tech Support</p>
               </li>
               <li class="collection-item avatar">
                 <i class="material-icons circle green">insert_chart</i>
                 <span class="title">Title</span>
-                <p>First Line <br>
-                   Second Line
-                </p>
+                <p>Full Tech Support</p>
               </li>
               <li class="collection-item avatar">
                 <i class="material-icons circle red">play_arrow</i>
                 <span class="title">Title</span>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, voluptas?
-                </p>
-                
+                <p>Full Tech Support</p>
               </li>
             </ul>
           </div>
-  
+
           <div class="col s4 center-align green lighten-3">
             <h5>Premium Plan</h5>
             <ul class="collection">
               <li class="collection-item avatar">
-                <img src="img/stuttgart1.jpg" alt="" class="circle">
+                <img src="img/stuttgart1.jpg" alt="" class="circle" />
                 <span class="title">Title</span>
-                <p>First Line <br>
-                   Second Line
-                </p>
+                <p>Full Tech Support</p>
               </li>
               <li class="collection-item avatar">
                 <i class="material-icons circle">folder</i>
                 <span class="title">Title</span>
-                <p>First Line <br>
-                   Second Line
-                </p>
+                <p>Full Tech Support</p>
               </li>
               <li class="collection-item avatar">
                 <i class="material-icons circle green">insert_chart</i>
                 <span class="title">Title</span>
-                <p>First Line <br>
-                   Second Line
-                </p>
+                <p>Full Tech Support</p>
               </li>
               <li class="collection-item avatar">
                 <i class="material-icons circle red">play_arrow</i>
                 <span class="title">Title</span>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, voluptas?
-                </p>
-                
+                <p>Full Tech Support</p>
               </li>
             </ul>
           </div>
         </div>
       </section>
-  
-      <section class="grey lighten-3">
+
+      <section data-aos="fade-up" data-aos-anchor-placement="center-center" id="portfolio" class="grey lighten-3 section scrollspy">
         <h3>Portfolio</h3>
       </section>
-  
-      <section class="grey lighten-3">
+
+      <section data-aos="zoom-in-right" id="contact" class="grey lighten-3 section scrollspy">
         <h3>Contact</h3>
-  
+
         <div class="row">
           <form class="col m6 s12">
             <div class="row">
@@ -262,10 +243,24 @@
                 <label for="icon_telephone">Telephone</label>
               </div>
             </div>
+            <div class="row">
+              <div class="input-field col s6">
+                <i class="material-icons prefix">check</i>
+                <input id="icon_prefix" type="text" class="validate" />
+                <label for="icon_prefix">First Name</label>
+              </div>
+              <div class="input-field col s6">
+                <i class="material-icons prefix">password</i>
+                <input id="icon_telephone" type="tel" class="validate" />
+                <label for="icon_telephone">Telephone</label>
+              </div>
+            </div>
           </form>
           <div class="col m6 s12">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto dolores eligendi animi ea aperiam aut consequuntur possimus quaerat quas excepturi?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+              dolores eligendi animi ea aperiam aut consequuntur possimus
+              quaerat quas excepturi?
             </p>
           </div>
         </div>
@@ -302,6 +297,7 @@
       type="text/javascript"
       src="https://code.jquery.com/jquery-3.2.1.min.js"
     ></script>
+    <script src="js/aos.js"></script>
     <script src="js/materialize.js"></script>
     <script src="js/main.js"></script>
   </body>
