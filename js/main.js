@@ -14,8 +14,16 @@ $(document).ready(function(){
       fullWidth: true,
       indicators: true
     });
-    M.toast({html: 'I am a toast!'})
+    
     $('.modal').modal();
     $('.sidenav').sidenav();
+    $(".dropdown-trigger").dropdown({
+      inDuration: 300,
+      outDuration: 225,
+      hover: true, // Activate on hover
+      belowOrigin: true, // Displays dropdown below the button
+      alignment: 'right' // Displays dropdown with 
+    });
+
     AOS.init();
   });
