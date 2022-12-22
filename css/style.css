@@ -28,6 +28,45 @@ section {
     margin-right: 8px;
 }
 
+.nested-menu {
+    position: relative;
+}
+
+.nested-dropdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown-menu {
+    position: relative;
+}
+
+.dropdown-menu ul {
+    z-index: 100;
+    background-color: cornflowerblue;
+    color:rgba(0, 0, 0, 0.24);
+    display: none;
+    flex-direction: column;
+    transition: 0.4s;
+    position: absolute;
+    width: 100%;
+}
+
+.dropdown-menu ul li {
+    text-align: center;
+}
+
+.dropdown-menu ul li:hover {
+    background-color: crimson;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.dropdown-menu:hover ul {
+    display: flex;
+}
+
 .about img {
     min-height: 300px;
 }
