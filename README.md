@@ -19,6 +19,12 @@ website which is photography, might edit this later.
 
 You just need to clone the project and run the HTML index file in your browser and you're done.
 
+## Updates
+
+- 19/3/23
+
+Docker deployment added through Nginx, not a big deal but you can now serve this static template through spawning an Nginx container on a server on port 80.
+
 ## Authors
 
 * **Amit Prafulla (APFirebolt)** - [My Website](https://apgiiit.com)
